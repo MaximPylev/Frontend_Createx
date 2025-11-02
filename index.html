@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Createx</title>
 
     <style media="(prefers-color-scheme: light)">
       @import url('./src/styles/colors/light.css');
@@ -12,9 +12,660 @@
     <style media="(prefers-color-scheme: dark)">
       @import url('./src/styles/colors/dark.css');
     </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <script type="module" src="/src/index.js"></script>
-    <p>Hello</p>
+
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <nav id="top" class="nav header__nav-container">
+            <div class="nav__logo">
+              <img src="/images/nav_logo.svg" alt="" />
+            </div>
+            <ul class="nav__menu">
+              <li>
+                <a href="#" class="nav__item nav__item--active">
+                  Services
+                  <img src="/images/chevron_down.svg" alt="" />
+                </a>
+              </li>
+              <li class="nav__item"><a href="#">Case Studies</a></li>
+              <li class="nav__item"><a href="#">About Us</a></li>
+              <li class="nav__item"><a href="#">Blog</a></li>
+              <li class="nav__item"><a href="#">Contacts</a></li>
+            </ul>
+            <button type="button" class="button header__button nav__button button--accent">Talk to a human</button>
+          </nav>
+          <div class="header__content-container">
+            <div class="header__breadcrumb-container">
+              <ul class="breadcrumb">
+                <li><img src="/images/breadcrumb__home-logo.svg" alt="" /></li>
+                <li><img src="/images/breadcrumb__chevron-right.svg" alt="" /></li>
+                <li class="breadcrumb__item">Services</li>
+                <li><img src="/images/breadcrumb__chevron-right.svg" alt="" /></li>
+                <li class="breadcrumb__item breadcrumb__item--active">Search Engine Optimization</li>
+              </ul>
+            </div>
+            <div class="header__text-container">
+              <h1 class="header__title">Search Engine Optimization</h1>
+              <p class="header__text-content">
+                Ipsum blandit etiam nunc vitae. Duis lobortis odio vel morbi dui pellentesque enim integer facilisi.
+                Ultrices vitae tempor amet nec euismod non.
+              </p>
+            </div>
+            <div class="input-container header__input-container">
+              <p>Your website URL</p>
+              <div class="header__input">
+                <input class="header__input-field" placeholder="http://yoursite.com" type="url" />
+                <button class="button header__button button--accent button--only-right-border-radius" type="button">
+                  Analyse your site
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="section-introduction container">
+          <ul class="clients">
+            <li><img src="/images/clients__logo-1.svg" alt="" /></li>
+            <li><img src="/images/clients__logo-2.svg" alt="" /></li>
+            <li><img src="/images/clients__logo-3.svg" alt="" /></li>
+            <li><img src="/images/clients__logo-4.svg" alt="" /></li>
+            <li><img src="/images/clients__logo-5.svg" alt="" /></li>
+            <li><img src="/images/clients__logo-6.svg" alt="" /></li>
+          </ul>
+          <div class="about">
+            <img class="about__image" src="/images/about__image.png" alt="" />
+            <div class="about__description-container">
+              <p class="about__title">We go above and beyond to ensure successful SEO</p>
+              <p class="about__text">
+                Lacus ac mollis vitae viverra. Tincidunt est, feugiat montes, viverra ullamcorper mi dui, nulla
+                pharetra. Sapien urna nullam elit diam mauris orci. Volutpat quam tempus justo, aliquam. Tortor ultrices
+                mattis eget orci eu nisi sed augue odio. Et senectus risus, pharetra, tristique libero. Dolor risus
+                ac quam dictum mattis ultrices laoreet sapien. Feugiat lacus, suscipit eu sociis et quis hendrerit. Cras
+                at ac magna ultricies orci.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section-features container">
+          <p class="section-features__title">SEO services include</p>
+          <div class="section-features__grid">
+            <div class="feature section-features__feature">
+              <img class="feature__logo" src="/images/feature__logo-1.svg" alt="" />
+              <div class="feature__description-container">
+                <p class="feature__title">SEO Strategy</p>
+                <p class="feature__description">
+                  Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+                </p>
+              </div>
+            </div>
+            <div class="feature section-features__feature">
+              <img class="feature__logo" src="/images/feature__logo-2.svg" alt="" />
+              <div class="feature__description-container">
+                <p class="feature__title">Competitor Analysis</p>
+                <p class="feature__description">
+                  Nulla id egestas accumsan consequat tincidunt. Urna nisi, nec sed massa pharetra duis ut porttitor.
+                </p>
+              </div>
+            </div>
+            <div class="feature section-features__feature">
+              <img class="feature__logo" src="/images/feature__logo-3.svg" alt="" />
+              <div class="feature__description-container">
+                <p class="feature__title">Technical Audit</p>
+                <p class="feature__description">
+                  Congue viverra in quis urna lectus proin massa. Aliquam, justo nisl sed diam nibh vehicula.
+                </p>
+              </div>
+            </div>
+            <div class="feature section-features__feature">
+              <img class="feature__logo" src="/images/feature__logo-4.svg" alt="" />
+              <div class="feature__description-container">
+                <p class="feature__title">Content Strategy</p>
+                <p class="feature__description">
+                  Posuere sed quam etiam semper id id euismod. Feugiat cras donec elementum interdum in.
+                </p>
+              </div>
+            </div>
+            <div class="feature section-features__feature">
+              <img class="feature__logo" src="/images/feature__logo-5.svg" alt="" />
+              <div class="feature__description-container">
+                <p class="feature__title">Media Promotion</p>
+                <p class="feature__description">
+                  Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa
+                  neque.
+                </p>
+              </div>
+            </div>
+            <div class="feature section-features__feature">
+              <img class="feature__logo" src="/images/feature__logo-6.svg" alt="" />
+              <div class="feature__description-container">
+                <p class="feature__title">SEO Reports</p>
+                <p class="feature__description">
+                  Congue phasellus est, amet sem bibendum sollicitudin arcu scelerisque senectus. Mauris, mus tincidunt
+                  a, nisi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-cta container">
+          <div class="cta">
+            <p class="cta__title">Get a Free SEO Analysis!</p>
+            <div class="cta__form">
+              <div class="cta__input-container input-container cta__input-container--small">
+                <p>Name</p>
+                <input class="input-field" placeholder="Your name" type="text" />
+              </div>
+              <div class="cta__input-container input-container cta__input-container--small">
+                <p>Email</p>
+                <input class="input-field" placeholder="Your working email" type="email" />
+              </div>
+              <div class="cta__input-container input-container cta__input-container--medium">
+                <p>Your website URL</p>
+                <input class="input-field" placeholder="http://yoursite.com" type="url" />
+              </div>
+              <div class="cta__button-container">
+                <button class="button cta__button" type="button">Analyse your site</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-steps container">
+          <p class="section-steps__title">That’s how it works</p>
+          <div class="section-steps__grid">
+            <div class="section-steps__step section-steps__step--1">
+              <div class="step__title">
+                <p class="step__title-counter">STEP 1</p>
+                <p class="step__title-text">Off-Site SEO Analysis</p>
+              </div>
+              <p class="step__description">
+                Aliquam turpis viverra quam sit interdum blandit posuere pellentesque. Nisl, imperdiet gravida massa
+                neque.
+              </p>
+            </div>
+            <div class="section-steps__step section-steps__step--2">
+              <div class="step__title">
+                <p class="step__title-counter">STEP 2</p>
+                <p class="step__title-text">Technical SEO Optimizations</p>
+              </div>
+              <p class="step__description">
+                Facilisis pellentesque quis accumsan ultricies. Eu egestas eget feugiat lacus, amet, sollicitudin
+                egestas laoreet etiam. Nunc nisl orci auctor et fames. Vestibulum viverra faucibus faucibus et
+                convallis.
+              </p>
+            </div>
+            <div class="section-steps__step section-steps__step--3">
+              <div class="step__title">
+                <p class="step__title-counter">STEP 3</p>
+                <p class="step__title-text">Usability Check</p>
+              </div>
+              <p class="step__description">
+                Eget amet, enim pharetra leo egestas nisi, odio imperdiet facilisis. Aliquet orci varius volutpat
+                egestas facilisi lobortis. Varius praesent pretium in leo, accumsan, in ultricies.
+              </p>
+            </div>
+            <div class="section-steps__step section-steps__step--4">
+              <div class="step__title">
+                <p class="step__title-counter">STEP 4</p>
+                <p class="step__title-text">Content Marketing</p>
+              </div>
+              <p class="step__description">
+                Non tempor pulvinar tincidunt aliquam. Placerat ultricies malesuada dui auctor. Faucibus in leo, nulla
+                odio nulla imperdiet quis faucibus neque.
+              </p>
+            </div>
+            <div class="step__line step__line--1">
+              <div class="step__line-dot"></div>
+            </div>
+            <div class="step__line step__line--2">
+              <div class="step__line-dot"></div>
+            </div>
+            <div class="step__line step__line--3">
+              <div class="step__line-dot"></div>
+            </div>
+            <div class="step__line step__line--4">
+              <div class="step__line-dot"></div>
+            </div>
+            <div class="step__line-segment"></div>
+          </div>
+        </div>
+        <div class="section-pricing container">
+          <p class="section-pricing__title">Flexible pricing plans</p>
+          <div class="section-pricing__plans-container">
+            <div class="plan section-pricing__plan">
+              <p class="plan__title">Basic</p>
+              <div class="plan__price-container">
+                <div class="plan__price">
+                  <p class="plan__price-text">$24</p>
+                  <p class="plan__price-duration">/mon</p>
+                </div>
+              </div>
+              <div class="divider plan__divider-container"></div>
+              <ul class="plan__list">
+                <li class="list-item plan__list-item">Advanced Analytics</li>
+                <li class="list-item plan__list-item">Change Management</li>
+                <li class="list-item plan__list-item">Corporate Finance</li>
+                <li class="list-item plan__list-item">One Way Link Building</li>
+                <li class="list-item plan__list-item">Social Media Marketing</li>
+                <li class="list-item list-item--inactive plan__list-item">Strategy & Marketing</li>
+                <li class="list-item list-item--inactive plan__list-item">Information Technology</li>
+              </ul>
+              <div class="plan__button-container">
+                <button class="button button--only-border plan__button" type="button">Choose plan</button>
+              </div>
+            </div>
+            <div class="plan section-pricing__plan plan--optimal">
+              <p class="plan__title plan__title--optimal">Optimal</p>
+              <div class="plan__price-container">
+                <div class="plan__price plan__price--optimal">
+                  <p class="plan__price-text">$64</p>
+                  <p class="plan__price-duration">/mon</p>
+                </div>
+              </div>
+              <div class="divider plan__divider-container"></div>
+              <ul class="plan__list">
+                <li class="list-item list-item--optimal plan__list-item">Advanced Analytics</li>
+                <li class="list-item list-item--optimal plan__list-item">Change Management</li>
+                <li class="list-item list-item--optimal plan__list-item">Corporate Finance</li>
+                <li class="list-item list-item--optimal plan__list-item">One Way Link Building</li>
+                <li class="list-item list-item--optimal plan__list-item">Social Media Marketing</li>
+                <li class="list-item list-item--optimal plan__list-item">Strategy & Marketing</li>
+                <li class="list-item list-item--optimal list-item--inactive plan__list-item">Information Technology</li>
+              </ul>
+              <div class="plan__button-container">
+                <button class="button button--accent plan__button" type="button">Choose plan</button>
+              </div>
+            </div>
+            <div class="plan section-pricing__plan">
+              <p class="plan__title">Premium</p>
+              <div class="plan__price-container">
+                <div class="plan__price">
+                  <p class="plan__price-text">$98</p>
+                  <p class="plan__price-duration">/mon</p>
+                </div>
+              </div>
+              <div class="divider plan__divider-container"></div>
+              <ul class="plan__list">
+                <li class="list-item plan__list-item">Advanced Analytics</li>
+                <li class="list-item plan__list-item">Change Management</li>
+                <li class="list-item plan__list-item">Corporate Finance</li>
+                <li class="list-item plan__list-item">One Way Link Building</li>
+                <li class="list-item plan__list-item">Social Media Marketing</li>
+                <li class="list-item plan__list-item">Strategy & Marketing</li>
+                <li class="list-item plan__list-item">Information Technology</li>
+              </ul>
+              <div class="plan__button-container">
+                <button class="button button--only-border plan__button" type="button">Choose plan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-cases">
+          <div class="section-cases__content-container container">
+            <p class="section-cases__title">Related case studies</p>
+            <div class="cases-container">
+              <div class="case cases-container__case-item">
+                <div class="case__title case__title--bold small regular">
+                  <img
+                    class="case__client-logo case__client-logo--filter"
+                    src="/images/case__clients-logo-1.png"
+                    alt=""
+                  />
+                  <p>Charity organisation</p>
+                </div>
+                <div class="divider"></div>
+                <p class="case__description base regular">
+                  Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.
+                </p>
+                <div class="case__statistics-container case__bold">
+                  <div class="statistics">
+                    <div class="circular-bar">
+                      <svg
+                        class="circular-bar__circle"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          opacity="0.3"
+                          cx="20"
+                          cy="20"
+                          r="18"
+                          stroke="var(--color-circular-bar-engagement)"
+                          stroke-width="4"
+                        />
+                      </svg>
+                      <svg
+                        class="circular-bar__circle"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 36C28.8366 36 36 28.8366 36 20C36 11.1634 28.8366 4 20 4V0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 14.2928 2.39055 9.14386 6.22496 5.5L8.72317 8.64953C5.80608 11.5478 4 15.563 4 20C4 28.8366 11.1634 36 20 36Z"
+                          fill="var(--color-circular-bar-engagement)"
+                        />
+                      </svg>
+                    </div>
+                    <div class="statistics__data">
+                      <p class="lead bold">90%</p>
+                      <p class="extrasmall regular">Engagement</p>
+                    </div>
+                  </div>
+                  <div class="statistics">
+                    <div class="circular-bar">
+                      <svg
+                        class="circular-bar__circle"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="20"
+                          cy="20"
+                          r="18"
+                          stroke="var(--color-circular-bar-deliverability)"
+                          stroke-width="4"
+                        />
+                      </svg>
+                    </div>
+                    <div class="statistics__data">
+                      <p class="lead bold">100%</p>
+                      <p class="extrasmall regular">Deliverability</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case cases-container__case-item">
+                <div class="case__title case__bold small regular">
+                  <img
+                    class="case__client-logo case__client-logo--filter"
+                    src="/images/case__clients-logo-2.png"
+                    alt=""
+                  />
+                  <p>Oil and natural resources</p>
+                </div>
+                <div class="divider"></div>
+                <p class="case__description base regular">
+                  With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400%
+                  increase in conversion rate.
+                </p>
+                <div class="case__statistics-container case__bold">
+                  <div class="statistics">
+                    <div class="circular-bar">
+                      <svg
+                        class="circular-bar__circle"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="20"
+                          cy="20"
+                          r="18"
+                          stroke="var(--color-circular-bar-growth-secondary)"
+                          stroke-width="4"
+                        />
+                      </svg>
+                    </div>
+                    <div class="statistics__data">
+                      <p class="lead bold">200%</p>
+                      <p class="extrasmall regular">Growth in sales</p>
+                    </div>
+                  </div>
+                  <div class="statistics">
+                    <div class="statistics__data">
+                      <p class="lead bold">1,400</p>
+                      <p class="extrasmall regular">Target investors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="case cases-container__case-item">
+                <div class="case__title case__bold small regular">
+                  <img
+                    class="case__client-logo case__client-logo--filter"
+                    src="/images/case__clients-logo-3.png"
+                    alt=""
+                  />
+                  <p>Personal care</p>
+                </div>
+                <div class="divider"></div>
+                <p class="case__description base regular">
+                  We helped Sunset company break through a noisy industry and better understand their buyer's journey.
+                </p>
+                <div class="case__statistics-container case__bold">
+                  <div class="statistics">
+                    <div class="circular-bar">
+                      <svg
+                        class="circular-bar__circle"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          opacity="0.3"
+                          cx="20"
+                          cy="20"
+                          r="18"
+                          stroke="var(--color-circular-bar-rate)"
+                          stroke-width="4"
+                        />
+                      </svg>
+                      <svg
+                        class="circular-bar__circle"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 36C28.8366 36 36 28.8366 36 20C36 11.1634 28.8366 4 20 4V0C31.0457 0 40 8.9543 40 20C40 31.0457 31.0457 40 20 40C8.9543 40 0 31.0457 0 20C0 14.2928 2.39055 9.14386 6.22496 5.5L8.72317 8.64953C5.80608 11.5478 4 15.563 4 20C4 28.8366 11.1634 36 20 36Z"
+                          fill="var(--color-circular-bar-rate)"
+                        />
+                      </svg>
+                    </div>
+                    <div class="statistics__data">
+                      <p class="lead bold">70%</p>
+                      <p class="extrasmall regular">Open Rate</p>
+                    </div>
+                  </div>
+                  <div class="statistics">
+                    <div class="circular-bar">
+                      <svg
+                        class="circular-bar__circle"
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="20" cy="20" r="18" stroke="var(--color-circular-bar-growth)" stroke-width="4" />
+                      </svg>
+                    </div>
+                    <div class="statistics__data">
+                      <p class="lead bold">200%</p>
+                      <p class="extrasmall regular">Growth in sales</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-cases__view-all">
+              <p class="title h3">Explore more our clients' case studies</p>
+              <button class="button button--accent section-cases__button bold" type="button">
+                View all case studies
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="section-services container">
+          <p class="h1 h1--hoverable section-services__title">Other services</p>
+          <div class="section-services__tabs">
+            <button
+              class="service-tab service-tab--active button button--only-border service-tab__button"
+              type="button"
+            >
+              Social Media
+            </button>
+            <button class="service-tab service-tab__button button button--only-border" type="button">SEO</button>
+            <button class="service-tab service-tab__button button button--only-border" type="button">Research</button>
+            <button class="service-tab service-tab__button button button--only-border" type="button">
+              Content & PR
+            </button>
+            <button class="service-tab service-tab__button button button--only-border" type="button">
+              Payed Traffic
+            </button>
+          </div>
+          <div class="section-services__content">
+            <div>
+              <div class="section-services__text-container">
+                <p class="section-services__title section-services__title--small">
+                  Complete Workflow For Any SEO Professional
+                </p>
+                <ul class="section-services__list">
+                  <li class="list-item section-services__list-item">
+                    Aenean enim tellus morbi nisl vulputate dictumst.
+                  </li>
+                  <li class="list-item section-services__list-item">Nibh sapien volutpat lacus augue.</li>
+                  <li class="list-item section-services__list-item">Vel in amet, placerat adipiscing est pharetra.</li>
+                  <li class="list-item section-services__list-item">Gravida ornare sit in et ut sit sem id.</li>
+                  <li class="list-item section-services__list-item">
+                    Ultrices pellentesque dictum enim egestas ac diam.
+                  </li>
+                  <li class="list-item section-services__list-item">Sit semper enim senectus integer ut turpis et.</li>
+                </ul>
+              </div>
+              <div class="section-services__buttons-container">
+                <button class="button button--only-border section-services__button" type="button">Learn more</button>
+                <button class="button button--accent section-services__button" type="button">Try SEO toolkit</button>
+              </div>
+            </div>
+            <img src="/images/services__social-media.svg" alt="" />
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__description-column">
+              <img src="/images/nav_logo.svg" alt="" />
+              <p class="footer__description-text">
+                Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money
+                through a wealth of performance data and market research. We create science-based SEO strategies
+                to empower our clients.
+              </p>
+              <ul class="socials">
+                <li>
+                  <a href=""><img src="/images/socials__facebook.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/images/socials__linkedin.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/images/socials__twitter.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="/images/socials__instagram.svg" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__flex-column">
+              <p class="footer__title">COMPANY</p>
+              <ul class="footer__flex-column footer__flex--gap8 footer__flex-column--opacity">
+                <li><a href="">About Us</a></li>
+                <li><a href="">Case Studies</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="footer__flex-column">
+              <p class="footer__title">SERVICES</p>
+              <ul class="footer__flex-column footer__flex--gap8 footer__flex-column--opacity">
+                <li><a href="">Social Media</a></li>
+                <li><a href="">SEO</a></li>
+                <li><a href="">Research</a></li>
+                <li><a href="">Content & PR</a></li>
+                <li><a href="">Payed Traffic</a></li>
+              </ul>
+            </div>
+            <div class="footer__flex-column">
+              <p class="footer__title">CONTACT US</p>
+              <ul class="footer__flex-column footer__flex--gap8 footer__flex-column--opacity">
+                <li class="footer__flex-row">
+                  <img src="/images/phone-icon.svg" alt="" /><a href="tel:4055550128">(405) 555-0128</a>
+                </li>
+                <li class="footer__flex-row">
+                  <img src="/images/mail-icon.svg" alt="" /><a href="mailto:hello@createx.com">hello@createx.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__flex-column footer__flex--gap24">
+              <p class="footer__title">SIGN UP TO OUR NEWSLETTER</p>
+              <div class="footer__flex-column footer__signup-input">
+                <input class="footer__input-field" placeholder="Email address" type="email" />
+                <p class="footer__additional-text">
+                  *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__divider-container">
+          <div class="divider divider--opacity40"></div>
+        </div>
+        <div class="section-awards container">
+          <div class="footer__flex-row footer__flex--gap24">
+            <img src="/images/award1.png" />
+            <img src="/images/award2.png" />
+            <img src="/images/award3.png" />
+            <img src="/images/award4.png" />
+          </div>
+          <div class="footer__button-container">
+            <p class="footer__button-text">GO TO TOP</p>
+            <a href="#top" class="button footer__button button--accent">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.29289 15.7071C3.90237 15.3166 3.90237 14.6834 4.29289 14.2929L11.2929 7.29289C11.6834 6.90237 12.3166 6.90237 12.7071 7.29289L19.7071 14.2929C20.0976 14.6834 20.0976 15.3166 19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071L12 9.41421L5.70711 15.7071C5.31658 16.0976 4.68342 16.0976 4.29289 15.7071Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__copyright-container section-copyright">
+          <div class="container">
+            <p class="section-copyright__text">
+              © All rights reserved. Made with <img class="icon-inline" src="/images/heart-icon.svg" /> by Createx
+              Studio
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

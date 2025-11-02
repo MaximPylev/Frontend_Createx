@@ -1,0 +1,132 @@
+.footer {
+  background-color: var(--color-footer-background);
+}
+
+.footer__grid {
+  display: grid;
+  padding-top: 80px;
+  grid-template-rows: auto;
+  grid-template-columns: 280px 90px 97px 157px minmax(auto, 286px);
+  column-gap: 80px;
+}
+
+.footer__description-column {
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 46px 128px auto;
+  grid-template-columns: auto;
+}
+
+.footer__flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__flex-column--opacity {
+  opacity: 0.6;
+}
+
+.footer__flex-row {
+  display: flex;
+  gap: 8px;
+}
+
+.footer__flex--gap8 {
+  gap: 8px;
+}
+
+.footer__flex--gap24 {
+  gap: 24px;
+}
+
+.footer__signup-input {
+  position: relative;
+}
+
+.footer__signup-input::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url('./images/right-arrow.svg');
+  z-index: 1;
+  position: absolute;
+  top: 11px;
+  right: 14px;
+}
+
+.footer__input-field {
+  flex-grow: 1;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  height: 36px;
+  padding: 9px 0 9px 12px;
+  color: var(--input-background-newsletter);
+  background-color: var(--input-background-newsletter);
+  border-color: var(--input-border-newsletter);
+
+  /* extrasmall regular */
+  font-size: 12px;
+  line-height: 150%;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0.6;
+}
+
+.footer__divider-container {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer__button-container {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.footer__button {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.footer__title {
+  /* bold */
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer__additional-text {
+  /* extraextrasmall regular */
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.footer__button-text {
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer__description-text {
+  /* extrasmall regular opacity60 */
+  font-size: 12px;
+  line-height: 150%;
+  opacity: 0.6;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer__copyright-container {
+  height: 50px;
+}

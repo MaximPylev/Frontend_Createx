@@ -1,0 +1,37 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 135px;
+  justify-content: flex-start;
+  color: var(--color-base);
+}
+
+.about__image {
+}
+
+.about__description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 390px;
+}
+
+.about__title {
+  /* title h1 */
+  color: var(--color-title);
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 46px;
+  line-height: 130%;
+  position: relative;
+}
+
+.about__text {
+  /* base regular */
+  font-size: 16px;
+  line-height: 160%;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

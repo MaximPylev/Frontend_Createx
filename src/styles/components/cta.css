@@ -1,0 +1,62 @@
+.cta {
+  padding: 48px 62px 48px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  background-image: url('/images/cta__background.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--color-purple);
+}
+
+.cta__form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+
+.cta__button-container {
+  align-self: flex-end;
+  height: 44px;
+}
+
+.cta__input-container {
+  height: 73px;
+
+  /* small regular */
+
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.cta__input-container--small {
+  max-width: 260px;
+}
+
+.cta__input-container--medium {
+  max-width: 310px;
+}
+
+.cta__button {
+  /* small bold */
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cta__title {
+  /* h2 */
+
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 130%;
+}

@@ -1,0 +1,106 @@
+.plan {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+  border-color: var(--pricing-plan-border);
+  border-width: 1px;
+  border-radius: 4px;
+  border-style: solid;
+  transition: transform var(--plan-transition-duration);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan__title {
+  margin-bottom: 8px;
+
+  /* title h3 */
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 150%;
+  color: var(--color-title);
+}
+
+.plan--optimal {
+  color: var(--color-plan-optimal-base);
+  background-color: var(--color-plan-optimal-background);
+  border-color: var(--color-plan-optimal-accent);
+}
+
+.plan__price-container {
+  margin-bottom: 16px;
+}
+
+.plan__divider-container {
+  margin-bottom: 24px;
+}
+
+.plan__list {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--color-title);
+}
+
+.plan__button-container {
+  min-height: 44px;
+  width: 146px;
+  color: var(--button-plan-base);
+}
+
+.plan__price {
+  color: var(--color-price);
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.plan__price-text {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 46px;
+  line-height: 130%;
+  position: relative;
+}
+
+.plan__price-duration {
+  /* lead bold */
+  font-size: 20px;
+  line-height: 150%;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.plan__price--optimal {
+  color: var(--color-plan-optimal-accent);
+}
+
+.plan__title--optimal {
+  color: var(--color-primary);
+}
+
+.plan__list-item {
+  height: 26px;
+}
+
+.plan__button {
+  /* small bold */
+
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+}

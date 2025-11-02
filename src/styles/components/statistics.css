@@ -1,0 +1,10 @@
+.statistics {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.statistics__data {
+  display: flex;
+  flex-direction: column;
+}

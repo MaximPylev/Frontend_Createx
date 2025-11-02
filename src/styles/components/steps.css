@@ -1,0 +1,8 @@
+.steps {
+  display: grid;
+  max-height: 596px;
+  max-width: 810px;
+  grid-template: repeat(3, 1fr) 1fr / 1fr 88px 1fr;
+  grid-template-areas: '. line1 step1' 'step2 line2 .' '. line3 step3' 'step4 line4 .';
+  color: var(--color-base);
+}

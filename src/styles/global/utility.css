@@ -4,3 +4,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  --feature-transition-duration: 0.2s;
+  --plan-transition-duration: 0.2s;
+  --case-transition-duration: 0.2s;
+  --step-transition-duration: 0.2s;
+  --h1-transition-duration: 0.2s;
+}

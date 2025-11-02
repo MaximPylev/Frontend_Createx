@@ -1,0 +1,79 @@
+.case {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-image: url('/images/case__background.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+  color: var(--color-base);
+  transition: color var(--case-transition-duration);
+}
+
+.case:hover {
+  color: var(--case-hover-text);
+}
+
+.case::before {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--case-background);
+  opacity: 1;
+  transition:
+    opacity var(--case-transition-duration),
+    background-color var(--case-transition-duration);
+}
+
+.case__title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.case__bold {
+  color: var(--color-title);
+  transition: color var(--case-transition-duration);
+}
+
+.case:hover .case__bold {
+  color: var(--case-hover-text);
+}
+
+.case:hover::before {
+  background-color: var(--case-hover-background);
+  opacity: 0.6;
+}
+
+.case__background {
+  background-image: url('/images/case__background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.case__statistics-container {
+  margin-top: auto;
+  display: flex;
+  gap: 32px;
+}
+
+.case__client-logo {
+  height: 44px;
+}
+
+.case__client-logo--filter {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(92%) saturate(297%) hue-rotate(104deg) brightness(93%)
+    contrast(89%);
+}
+
+.case:hover .case__client-logo--filter {
+  filter: brightness(0) saturate(100%) invert(92%) sepia(100%) saturate(30%) hue-rotate(58deg) brightness(106%)
+    contrast(113%);
+}

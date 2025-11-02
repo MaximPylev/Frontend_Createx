@@ -1,0 +1,24 @@
+.button {
+  font-weight: inherit;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 4px;
+  padding: 0 32px;
+  height: 100%;
+  background-color: var(--button-base);
+}
+
+.button--accent {
+  color: var(--color-primary);
+  background-color: var(--button-accent);
+}
+
+.button--only-border {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.button--only-right-border-radius {
+  border-radius: 0 4px 4px 0;
+}

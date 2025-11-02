@@ -1,0 +1,16 @@
+.divider {
+  min-height: 1px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(from var(--divider-gradient) r g b / 0%) 0%,
+    rgb(from var(--divider-gradient) r g b / 50%) 12%,
+    rgb(from var(--divider-gradient) r g b / 100%) 52%,
+    rgb(from var(--divider-gradient) r g b / 50%) 88%,
+    rgb(from var(--divider-gradient) r g b / 0%) 100%
+  );
+}
+
+.divider--opacity40 {
+  opacity: 0.4;
+}
