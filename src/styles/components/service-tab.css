@@ -1,0 +1,20 @@
+.service-tab {
+  flex-grow: 1;
+  color: var(--color-service-tab-inactive);
+  border-style: hidden;
+  width: 100%;
+}
+
+.service-tab--active {
+  color: var(--color-service-tab-active);
+  border-style: solid;
+}
+
+.service-tab__button {
+  /* base bold */
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 160%;
+}

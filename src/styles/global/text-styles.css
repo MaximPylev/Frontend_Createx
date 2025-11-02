@@ -1,0 +1,139 @@
+.h1 {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 46px;
+  line-height: 130%;
+  position: relative;
+}
+
+.h1--hoverable::after {
+  display: block;
+  content: ' ';
+  width: 0%;
+  height: 0.25rem;
+  bottom: 5px;
+  left: 50%;
+  background-color: var(--color-h1-underline);
+  transition:
+    width var(--h1-transition-duration),
+    left var(--h1-transition-duration);
+  position: absolute;
+}
+
+.h1--hoverable:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.h2 {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.h3 {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 150%;
+}
+
+.h4 {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.h5 {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 130%;
+}
+
+.h6 {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.regular {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold {
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.black {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.display1 {
+  font-size: 72px;
+  line-height: 130%;
+}
+
+.display2 {
+  font-size: 64px;
+  line-height: 130%;
+}
+
+.display3 {
+  font-size: 56px;
+  line-height: 130%;
+}
+
+.display4 {
+  font-size: 48px;
+  line-height: 130%;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.large {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.base {
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.small {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.extrasmall {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.extraextrasmall {
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.opacity60 {
+  opacity: 0.6;
+}

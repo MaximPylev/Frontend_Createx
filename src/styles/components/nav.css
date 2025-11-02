@@ -1,0 +1,43 @@
+.nav {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: content-box;
+
+  /* base */
+  font-size: 16px;
+  line-height: 160%;
+
+  /* bold */
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nav__logo {
+  max-width: 130px;
+  max-height: 22px;
+}
+
+.nav__menu {
+  display: inherit;
+  flex-direction: inherit;
+  gap: 40px;
+  padding-left: 60px;
+}
+
+.nav__item {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8px;
+  opacity: 0.6;
+}
+
+.nav__item--active {
+  opacity: 1;
+}
+
+.nav__button {
+  margin-left: auto;
+}

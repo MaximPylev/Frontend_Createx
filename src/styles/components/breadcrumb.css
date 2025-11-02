@@ -1,0 +1,22 @@
+.breadcrumb {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+
+  /* small regular */
+
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.breadcrumb__item {
+  opacity: 0.6;
+}
+
+.breadcrumb__item--active {
+  opacity: 1;
+}

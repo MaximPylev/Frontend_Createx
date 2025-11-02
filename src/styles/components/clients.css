@@ -1,0 +1,7 @@
+.clients {
+  display: flex;
+  flex-direction: row;
+  gap: 102px;
+  align-items: center;
+  justify-content: flex-start;
+}

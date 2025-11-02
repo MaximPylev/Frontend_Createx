@@ -1,0 +1,9 @@
+.cases-container {
+  display: flex;
+  gap: 30px;
+}
+
+.cases-container__case-item {
+  width: 390px;
+  height: 390px;
+}
